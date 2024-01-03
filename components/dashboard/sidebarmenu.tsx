@@ -46,7 +46,7 @@ export default function SidebarMenu() {
                 </div>
                 {
                     MenuItems.map(item => 
-                        <Link href={item.link}>
+                        <Link href={item.link} key={item.link} >
                             <div
                                 className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-blue-600 text-white"
                             >
